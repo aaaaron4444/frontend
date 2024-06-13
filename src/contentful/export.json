@@ -1,0 +1,1165 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "l9cs47795qd7"
+          }
+        },
+        "id": "blog",
+        "type": "ContentType",
+        "createdAt": "2024-06-12T12:38:40.838Z",
+        "updatedAt": "2024-06-12T12:38:41.439Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2024-06-12T12:38:41.439Z",
+        "firstPublishedAt": "2024-06-12T12:38:41.439Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1eLHwUq1zbVig8dLnfhXQZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1eLHwUq1zbVig8dLnfhXQZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1eLHwUq1zbVig8dLnfhXQZ"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/l9cs47795qd7/environments/master/content_types/blog"
+      },
+      "displayField": "title",
+      "name": "Blog",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "summary",
+          "name": "Summary",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "details",
+          "name": "Details",
+          "type": "RichText",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "hyperlink",
+                "entry-hyperlink",
+                "asset-hyperlink",
+                "embedded-entry-inline"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "articleImage",
+          "name": "articleImage",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "author",
+          "name": "Author",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "createdAt",
+          "name": "createdAt",
+          "type": "Date",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "l9cs47795qd7",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2024-06-12T12:38:41.663Z",
+        "createdBy": {
+          "sys": {
+            "id": "1eLHwUq1zbVig8dLnfhXQZ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2024-06-12T12:38:42.509Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1eLHwUq1zbVig8dLnfhXQZ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "blog",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slug",
+          "widgetId": "slugEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "summary",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "details",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "articleImage",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "author",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "createdAt",
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "l9cs47795qd7"
+          }
+        },
+        "id": "40ilad70AmgNUcJbwiHHXY",
+        "type": "Entry",
+        "createdAt": "2024-06-12T12:48:11.150Z",
+        "updatedAt": "2024-06-12T12:55:57.599Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 12,
+        "publishedAt": "2024-06-12T12:55:57.599Z",
+        "firstPublishedAt": "2024-06-12T12:55:57.599Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1eLHwUq1zbVig8dLnfhXQZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1eLHwUq1zbVig8dLnfhXQZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 13,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1eLHwUq1zbVig8dLnfhXQZ"
+          }
+        },
+        "automationTags": [
+        ],
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blog"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/l9cs47795qd7/environments/master/entries/40ilad70AmgNUcJbwiHHXY"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Peringatan 3 Juni: Sejarah Panjang Pasar Modal Indonesia Hingga Perkembangan Investor Pasar Modal Saat Ini"
+        },
+        "slug": {
+          "en-US": "peringatan-3-juni-sejarah-panjang-pasar-modal-indonesia-hingga-perkembangan"
+        },
+        "summary": {
+          "en-US": "Peringatan 3 Juni"
+        },
+        "details": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Hari Pasar Modal Indonesia: Sejarah dan Perkembangannya",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Surabaya, 31 Mei 2024 -- Tanggal 3 Juni diperingati sebagai Hari Pasar Modal Indonesia. Peringatan ini menjadi tonggak sejarah yang penting perjalanan panjang pasar modal Indonesia. Perananannya yang signifikan dalam mendorong pertumbuhan ekonomi dan memperkuat struktur ekonomi nasional. Mari kita gunakan momen ini untuk menelisik perkembangan pasar modal, memahami betapa pentingnya pasar modal bagi kemajuan ekonomi kita, dan bagaimana bagaimana partisipasi aktif dalam pasar modal dapat membantu memperkuat fondasi ekonomi nasional kita.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Sejarah Pasar Modal Indonesia",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Perkembangan pasar modal Indonesia pertama kali berdiri sejak zaman kolonial Belanda di Batavia pada tanggal 14 Desember 1912 dengan nama Vereniging voor de Effectenhandel. Pada masa itu, aktivitas perdagangan masih sangat terbatas dan kurang berkembang. Dua tahun setelah diresmikan, bursa di Batavia sempat ditutup akibat pecahnya Perang Dunia I dan kembali dibuka empat tahun kemudian.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Pada tahun 1918, pasar modal di Batavia mengalami perkembangan pesat. Hal ini mendorong pendirian bursa di dua kota lain, yakni Surabaya dan Semarang. Pada masa itu, nilai efek yang tercatat mencapai NIF 1,4 dari 250 macam efek. Namun, periode ini tidak berlangsung lama karena pasar modal kembali terguncang oleh resesi ekonomi tahun 1929 dan pecahnya Perang Dunia II. Peristiwa ini menandai berakhirnya aktivitas pasar modal pada masa penjajahan Belanda.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Setelah pemerintah Belanda mengakui kedaulatan Republik Indonesia pada tahun 1950, pemerintah Indonesia mengeluarkan obligasi yang sekaligus menandai mulai aktifnya kembali pasar modal Indonesia. Namun, pada tahun 1958, kebijakan politik konfrontasi yang diambil oleh pemerintah mengakibatkan kemunduran perdagangan di bursa. Tingkat inflasi yang tinggi semakin mengurangi kepercayaan masyarakat terhadap pasar uang dan pasar modal.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "\nKeadaan pasar modal pada masa konfrontasi hingga era Orde Baru mengalami transformasi signifikan. Berbagai regulasi dan kebijakan diterapkan untuk merangsang masyarakat agar mau terjun dan aktif di pasar modal. Pada masa pemerintahan Presiden Soeharto, pasar modal diaktifkan kembali pada tahun 1977. Momen ini dianggap sebagai tonggak penting dalam sejarah pasar modal Indonesia, yang diperingati setiap tanggal 3 Juni sebagai Hari Pasar Modal Indonesia.      ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Revitalisasi pasar modal  diawali dengan berdirinya Bursa Efek Jakarta (BEJ) yang menjadi pusat perdagangan saham  Indonesia. Pada periode ini, pemerintah dan otoritas terkait telah mengumumkan berbagai kebijakan untuk meningkatkan transparansi, efisiensi dan likuiditas di pasar modal.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Bursa Efek Jakarta (BEJ) dan Bursa Efek Surabaya (BES) secara resmi bergabung menjadi Bursa Efek Indonesia (BEI) pada tahun 2007, hal ini dilakukan untuk meningkatkan likuiditas pasar modal Indonesia.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Transformasi ini telah membawa berbagai manfaat, antara lain peningkatan volume perdagangan, diversifikasi produk keuangan, dan peningkatan infrastruktur pasar.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Perkembangan Investor Pasar Modal Saat Ini",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " berdasarkan statistik data pasar modal yang dirilis Kustodian Sentral Efek Indonesia (KSEI), jumlah investor di pasar modal Indonesia terus meningkat. Tercatat sebanyak 12,78 juta orang telah berinvestasi di pasar modal pada per April 2024, hal ini menunjukkan pertumbuhan sebesar 7,85% dari posisi akhir tahun 2023.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Berdasarkan data terbaru dari KSEI, jumlah investor pasar modal pada April 2024 tumbuh 1,19% dari bulan sebelumnya. Pertumbuhan tersebut baik, meskipun tidak begitiu signifikan dibandingkan dengan  pertumbuhan pada April 2023 yang mencapai 1,69% secara month-to-month (MtM) di tahun tersebut.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Pada bulan April 2024 tercatat sebanyak 12,03 juta investor reksa dana, 1,07 juta investor SBN, dan 5,63  juta merupakan investor surat berharga lainnya",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Hingga saat ini, pertumbuhan jumlah investor individu di pasar modal Indonesia tercatat lebih banyak dibandingkan dengan korporasi, reksadana, dana pensiun, institusi finansial, asuransi dan sekuritas. Pada Maret 2024 mencapai 12,60 juta, sedangkan pada April 2024 jumlah investor individu di pasar modal bertumbuh menjadi 12,74 juta.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Pada April 2024, data KSEI menunjukkan bahwa jumlah investor individu dengan pendidikan SMA kebawah merupakan kontribusi terbesar, hal ini menunjukkan edukasi keuangan dari berbagai lembaga sangat baik dalam memberikan pengetahuan dasar mengenai pasar modal Indonesia.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Demografi investor individu didominasi oleh anak muda, khususnya mereka yang berusia dibawah 30 tahun sebanyak 55,79%, diikuti oleh kelompok usia 31-40 tahun sebanyak 23,89% pada April 2024.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "\nSaat ini investor individu dengan latar belakang pengusaha lebih unggul dalam jumlah aset dengan mengantongi angka sebesar Rp452,44 triliun, diikuti pegawai negeri, swasta, dan guru sebesar 412,89 triliun pada April 2024",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Sementara itu, komposisi asal investor pasar modal memiliki proporsi 99,70% dan 0,30% antara investor lokal dan asing. Adapun, komposisi aset mereka memiliki proporsi sebesar 59,01% lokal dan 40,99% asing. Hal ini menunjukkan bahwa meskipun investor dalam negeri merupakan mayoritas dari jumlah individu yang berinvestasi, investor asing masih memiliki porsi aset yang signifikan, hal ini menunjukkan prospek pasar modal Indonesia yang menunjukkan kepercayaan mereka.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Ke depan, diharapkan jumlah investor dan transaksi harian akan terus meningkat, literasi keuangan akan meningkat, dan  akses investasi semakin mudah sehingga pasar modal Indonesia dapat tumbuh lebih kuat dan berkelanjutan.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "articleImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5zFTE6L5Ey4AsT712RCXNZ"
+            }
+          }
+        },
+        "author": {
+          "en-US": "Budi"
+        },
+        "createdAt": {
+          "en-US": "2024-06-12T00:00+07:00"
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "l9cs47795qd7"
+          }
+        },
+        "id": "5zFTE6L5Ey4AsT712RCXNZ",
+        "type": "Asset",
+        "createdAt": "2024-06-12T12:52:08.967Z",
+        "updatedAt": "2024-06-12T12:55:34.755Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2024-06-12T12:55:34.755Z",
+        "firstPublishedAt": "2024-06-12T12:55:34.755Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1eLHwUq1zbVig8dLnfhXQZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1eLHwUq1zbVig8dLnfhXQZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1eLHwUq1zbVig8dLnfhXQZ"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/l9cs47795qd7/environments/master/assets/5zFTE6L5Ey4AsT712RCXNZ"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Peringatan 3 Juni"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/l9cs47795qd7/5zFTE6L5Ey4AsT712RCXNZ/ee37f9d1ab9d43b49e361ef4b8d168c2/financial-assets-scaled.webp",
+            "details": {
+              "size": 151478,
+              "image": {
+                "width": 2560,
+                "height": 1440
+              }
+            },
+            "fileName": "financial-assets-scaled.webp",
+            "contentType": "image/webp"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "1omACbLDuGI1XQxmg6JXJu",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "l9cs47795qd7"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "ef3e0cd7-346f-42fe-aad0-f239aedcdc7f"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1eLHwUq1zbVig8dLnfhXQZ"
+          }
+        },
+        "createdAt": "2024-06-12T12:21:11Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1eLHwUq1zbVig8dLnfhXQZ"
+          }
+        },
+        "updatedAt": "2024-06-12T12:21:11Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+    {
+      "name": "Author",
+      "description": "Allows editing of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "create"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "create"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "1oEBVGY22xqaoPnwNtTZmE",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "l9cs47795qd7"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1eLHwUq1zbVig8dLnfhXQZ"
+          }
+        },
+        "createdAt": "2024-06-12T12:21:11Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1eLHwUq1zbVig8dLnfhXQZ"
+          }
+        },
+        "updatedAt": "2024-06-12T12:21:11Z"
+      }
+    },
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "1oEZCCH7dup29ift4cUhqo",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "l9cs47795qd7"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1eLHwUq1zbVig8dLnfhXQZ"
+          }
+        },
+        "createdAt": "2024-06-12T12:21:11Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1eLHwUq1zbVig8dLnfhXQZ"
+          }
+        },
+        "updatedAt": "2024-06-12T12:21:11Z"
+      }
+    },
+    {
+      "name": "Translator",
+      "description": "Allows editing of localized fields in the specified language",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "1oFlaBfGYcgQVYNv6zc0U8",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "l9cs47795qd7"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1eLHwUq1zbVig8dLnfhXQZ"
+          }
+        },
+        "createdAt": "2024-06-12T12:21:11Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1eLHwUq1zbVig8dLnfhXQZ"
+          }
+        },
+        "updatedAt": "2024-06-12T12:21:11Z"
+      }
+    }
+  ]
+}
